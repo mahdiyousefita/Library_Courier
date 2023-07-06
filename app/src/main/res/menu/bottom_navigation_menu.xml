@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <group >
+        <item
+            android:id="@+id/item_bill"
+            android:title="صورت حساب" android:icon="@drawable/baseline_shopping_cart_checkout_24"
+            />
+
+        <item
+            android:id="@+id/item_history"
+            android:title="تاریخچه ارسال ها" android:icon="@drawable/baseline_history_24"
+            />
+
+
+
+        <item
+            android:id="@+id/item_request"
+            android:title="درخواست ها" android:icon="@drawable/baseline_delivery_dining_24"
+            />
+
+    </group>
+
+</menu>

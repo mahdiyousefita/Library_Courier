@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@color/black"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="20dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tv_history_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="مرسولهNVS01236"
+            style="@style/historyItemsTextStyle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tv_history_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="20000 تومان"
+            app:layout_constraintTop_toBottomOf="@id/tv_history_ID"
+            style="@style/historyItemsTextStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tv_history_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="اشکان مهدوی"
+            app:layout_constraintTop_toBottomOf="@id/tv_history_price"
+            style="@style/historyItemsTextStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_history_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_history_name"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="18dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="@color/my_green"
+            android:text="دریافت مشتری"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="18sp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
